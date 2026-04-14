@@ -1,0 +1,71 @@
+{
+  "mvp": {
+    "windowsUpdate": {
+      "enabled": true
+    },
+    "browserCleanup": {
+      "enabled": true,
+      "browsers": [
+        {
+          "name": "Chrome",
+          "processNames": [
+            "chrome"
+          ],
+          "profileRoot": "%LOCALAPPDATA%\\Google\\Chrome\\User Data"
+        },
+        {
+          "name": "Edge",
+          "processNames": [
+            "msedge"
+          ],
+          "profileRoot": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data"
+        }
+      ],
+      "relativeTargets": [
+        "Default\\Cache",
+        "Default\\Code Cache",
+        "Default\\GPUCache",
+        "Default\\History",
+        "Default\\Network\\Cookies"
+      ]
+    },
+    "fileCleanup": {
+      "enabled": true,
+      "mode": "quarantine",
+      "quarantineRoot": "%SYSTEMDRIVE%\\Cinderella_Quarantine",
+      "targets": [
+        {
+          "name": "Downloads",
+          "path": "%USERPROFILE%\\Downloads",
+          "allowRoot": false
+        },
+        {
+          "name": "D drive",
+          "path": "D:\\",
+          "allowRoot": true
+        }
+      ]
+    },
+    "recycleBin": {
+      "enabled": true
+    },
+    "report": {
+      "enabled": true,
+      "root": ".\\reports"
+    }
+  },
+  "future": {
+    "desktopIcons": {
+      "enabled": false
+    },
+    "registryAudit": {
+      "enabled": false
+    },
+    "installedProgramAudit": {
+      "enabled": false
+    },
+    "detailedReport": {
+      "enabled": false
+    }
+  }
+}
